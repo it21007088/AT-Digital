@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: inter;
+}
+
+nav{
+    background: #6B3CC9;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    padding: 7px  13px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s; 
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: aqua;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F28D35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.button2{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F28D35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    size: 20px;
+}
+.dashed-box {
+    font-family: inter;
+    margin-top: 80px;
+    border: 2px dashed #9747FF; 
+    padding: 5px; 
+    max-width: 801px; 
+    height: 335px;
+    margin-right: auto;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+.dashed-box h1:nth-of-type(1) {
+    margin-top: 20px;
+    font-size: 22px;
+    color: black;
+}
+
+.dashed-box h1:nth-of-type(2) {
+    margin-top: 80px;
+    font-size: 22px;
+    color: #6B3CC9;
+}
+
+.dashed-box p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6F6C90;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: #6B3CC9;
+    font-family: inter; 
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-content {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-content h4 {
+    color: white;
+}
+
+.footer-content ul {
+    color: white; 
+    padding-left: auto;
+}
+
+.footer-content p{
+    margin-top: 20px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-content {
+        flex: 0 0 100%;
+    }
+}
+
+.bg-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.bg-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gradiant-box {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: calc(100% - 60px); /* Responsive width with padding considered */
+  max-width: 100%; /* Set a maximum width */
+  background: linear-gradient(to right, #90EE90, #14c6c0);
+  text-align: left;
+  color: white;
+  padding: 20px;
+  font-size: 3vw; /* Responsive font size */
+  font-weight: bold;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+@media (min-width: 500px) {
+  .gradiant-box {
+    width: 500px; /* Set a fixed width for larger screens */
+  }
+}
+
+
+.container1 {
+    display: flex;
+    align-items: center; 
+}
+
+.img1 {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    padding: 90px;
+}
+
+.box1 {
+    flex: 1; 
+}
+
+.box1 h1 {
+    color: #6B3CC9;
+    font-size: 27px;
+}
+
+.box1 p {
+    margin-top: 25px;
+    color: #000;
+    font-size: 16px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+}
+
+.img2 {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    padding: 90px;
+    padding: 150px; 
+}
+
+.box2 {
+    margin-top: 25px;
+    padding: 80px;
+    flex: 1; 
+}
+
+.box2 h1 {
+    color: #6B3CC9;
+    font-size: 27px; 
+}
+
+.box2 p {
+    margin-top: 25px;
+    color: #000;
+    font-size: 16px; 
+}
+
+.container3{
+    align-items: center;
+    color: #6B3CC9;
+    size: 27px;
+}
+
+.container3 h2{
+    text-align: center;
+}
+
+.box3{
+    background: #FAF8FF;
+    width: 800px;
+    text-align: center;
+}
+
+.box3 h3{
+    align-items: center;
+    color: #6B3CC9;
+    size: 22px;
+    text-align: center;
+}
+
+.box3 p{
+    align-items: center;
+    size: 18px;  
+    text-align: center;
+    color: #6F6C90 ;
+    text-wrap: wrap;
+}
+
+.box4 {
+    background: #FAF8FF;
+    width: 800px;
+    text-align: center;
+}
+
+.box4 h3{
+    align-items: center;
+    color: #000;
+    size: 27px;
+}
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
